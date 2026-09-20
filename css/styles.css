@@ -188,10 +188,6 @@ button:focus-visible {
   text-decoration: none;
 }
 
-.nav-linkedin-mobile {
-  display: none;
-}
-
 .header-right {
   display: flex;
   align-items: center;
@@ -780,14 +776,6 @@ button:focus-visible {
     border-bottom: none;
   }
 
-  .nav-linkedin-mobile {
-    display: flex;
-  }
-
-  .btn-linkedin {
-    display: none;
-  }
-
   .menu-toggle {
     display: inline-flex;
   }
@@ -798,6 +786,26 @@ button:focus-visible {
 
   .header-inner {
     position: relative;
+  }
+}
+
+@media (max-width: 479px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 400px) {
+  .wordmark {
+    font-size: 16px;
+  }
+
+  .header-right {
+    gap: 6px;
+  }
+
+  .header-right .btn {
+    padding: 0 9px;
   }
 }
 
